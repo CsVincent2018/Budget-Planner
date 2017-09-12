@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id = "@+id/nav_view">
+
+    <item android:id = "@+id/nav_Home"
+        android:title="Home"
+        android:background ="#fff2"
+        android:icon = "@mipmap/homeicon" app:showAsAction="always" />
+    <item android:id = "@+id/nav_ViewBudget"
+        android:title="Budget"
+        android:icon ="@mipmap/bgticon"
+        android:background ="#f2f2f2"
+        app:showAsAction="always"
+        />
+    <item android:id = "@+id/nav_Expenses"
+        android:title="Expenses"
+        android:icon ="@mipmap/money"
+        android:background ="#f2f2f2"
+        app:showAsAction="always"
+        />
+
+    <item android:id = "@+id/nav_Category"
+        android:title="Category"
+        android:icon = "@mipmap/categoryex" app:showAsAction="always" />
+
+    <item android:id = "@+id/nav_Reminder"
+        android:title="Reminder"
+        android:background ="#fff2"
+        android:icon = "@mipmap/reminder" app:showAsAction="always" />
+
+    <item android:id = "@+id/nav_Aboutus"
+        android:title="About Us"
+        android:background ="#fff2"
+        android:icon = "@mipmap/aboutusex" app:showAsAction="always" />
+</menu>

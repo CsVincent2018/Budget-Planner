@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttitle"
+        android:layout_centerHorizontal="true"
+        android:text="Add new Expenses"
+        android:textColor="#081e42"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"></TextView>
+<TextView
+    android:visibility="invisible"
+    android:hint = "the balance"
+    android:id ="@+id/txtaddblnc"
+    android:layout_below="@id/txttitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <TextView
+        android:visibility="invisible"
+        android:text="0"
+        android:hint="Remaining balance"
+        android:layout_below="@id/txtaddblnc"
+        android:id="@+id/txtremainblnc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:text="0"
+        android:hint="The Total"
+        android:layout_below="@id/txtremainblnc"
+        android:id="@+id/txtexptotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:hint="Date"
+    android:textStyle="bold"
+    android:layout_below="@id/txttitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtexpdate"
+    android:layout_centerHorizontal="true"
+    android:textColor="#081e42"
+    android:fontFamily="monospace"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"></TextView>
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:popupBackground="#8d8787"
+        android:layout_marginTop="5dp"
+        android:id="@+id/spnnrcat"
+        android:layout_below="@id/txtexpdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Spinner>
+
+    <EditText
+        android:id = "@+id/etexpname"
+        android:hint="Expenses Name.."
+        android:textSize="20sp"
+        android:maxLength="10"
+        android:layout_below="@id/spnnrcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id = "@+id/etexpamount"
+        android:hint="Expenses Amount.."
+        android:inputType="number"
+        android:maxLength="5"
+        android:textSize="20sp"
+        android:layout_below="@id/etexpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <Button
+
+        android:id="@+id/btnsaveexp"
+        android:layout_marginLeft="20dp"
+        android:background="#4e8b06"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:fontFamily=""
+        android:text="Save"
+        android:layout_below="@id/etexpamount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btncancelexp"
+        android:layout_marginLeft="20dp"
+        android:background="#400e0e"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:fontFamily=""
+        android:text="Cancel"
+        android:layout_below="@id/etexpamount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:hint="Add Category...."
+    android:layout_margin="5dp"
+    android:id="@+id/etaddcat"
+    android:inputType="text"
+    android:textSize="25sp"
+    android:maxLength="10"
+    android:fontFamily="casual"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+    <Button
+
+        android:id="@+id/btnsavecat"
+        android:layout_marginLeft="20dp"
+        android:background="#4e8b06"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:fontFamily=""
+        android:text="Save"
+        android:layout_below="@id/etaddcat"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btncancel"
+        android:layout_marginLeft="20dp"
+        android:background="#400e0e"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:fontFamily=""
+        android:text="Cancel"
+        android:layout_below="@id/etaddcat"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
